@@ -1,0 +1,23 @@
+2026-04-14 17:18:31:1831 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-04-14 17:21:42:2142 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-04-14 17:21:48:2148 [35mhttp[39m: [35mGET / 404 139 - 1.906 ms[39m
+2026-04-14 17:29:57:2957 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-04-14 17:31:13:3113 [35mhttp[39m: [35mGET / 404 139 - 2.240 ms[39m
+2026-04-14 18:19:55:1955 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-04-14 18:20:07:207 [35mhttp[39m: [35mGET / 404 139 - 3.544 ms[39m
+2026-04-14 18:26:55:2655 [32minfo[39m: [32m🚀 Servidor executando na porta 3000[39m
+2026-04-14 18:27:07:277 [32minfo[39m: [32m🚀 Servidor executando na porta 3000 IP[39m
+2026-04-14 18:27:09:279 [32minfo[39m: [32m🚀 Servidor executando na porta 3000 IP$[39m
+2026-04-14 18:27:15:2715 [32minfo[39m: [32m🚀 Servidor executando na porta 3000 IPfunction ipv4(params) {[39m
+[32m    return core._ipv4(exports.ZodIPv4, params);[39m
+[32m}[39m
+2026-04-14 18:28:03:283 [32minfo[39m: [32m🚀 Servidor executando na porta 3000 IPPIN0725750W11-1[39m
+2026-04-14 18:28:15:2815 [32minfo[39m: [32m🚀 Servidor executando na porta 3000}[39m
+2026-04-14 18:42:41:4241 [32minfo[39m: [32m🚀 Servidor executando na porta 3000}[39m
+2026-04-15 13:35:33:3533 [32minfo[39m: [32m🚀 Servidor executando na porta 3000}[39m
+2026-04-15 13:37:08:378 [32minfo[39m: [32m🚀 Servidor executando na porta 3000}[39m
+2026-04-15 13:56:10:5610 [32minfo[39m: [32m🚀 Servidor executando na porta 3000}[39m
+2026-04-15 13:56:26:5626 [35mhttp[39m: [35mGET / 404 139 - 1.790 ms[39m
+2026-04-15 13:57:53:5753 [32minfo[39m: [32m🚀 Servidor executando na porta 3000}[39m
+2026-04-15 13:57:56:5756 [35mhttp[39m: [35mGET / 404 139 - 2.215 ms[39m
+2026-04-15 16:36:29:3629 [32minfo[39m: [32m🚀 Servidor executando na porta 3000}[39m
