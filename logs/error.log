@@ -1,0 +1,22 @@
+2026-04-24 16:53:40:5340 [31merror[39m: [31mErro ao listar usuários: PrismaClientInitializationError: [39m
+[31mInvalid `prisma.user.findMany()` invocation in[39m
+[31mC:\Users\diogo.fsilva1\Documents\APIDELETE\APIDELETE\src\services\user.service.ts:19:27[39m
+
+[31m  16 }[39m
+[31m  17 [39m
+[31m  18 export const getAllUsers = async () => {[39m
+[31m→ 19  return await prisma.user.findMany([39m
+[31mCan't reach database server at `10.141.46.27:5432`[39m
+
+[31mPlease make sure your database server is running at `10.141.46.27:5432`.[39m
+2026-04-24 16:53:51:5351 [31merror[39m: [31mErro ao criar usuário: PrismaClientInitializationError: [39m
+[31mInvalid `prisma.user.create()` invocation in[39m
+[31mC:\Users\diogo.fsilva1\Documents\APIDELETE\APIDELETE\src\services\user.service.ts:6:36[39m
+
+[31m  3 [39m
+[31m  4 export const createUser = async (name: string, email: string, password: string) => {[39m
+[31m  5     const hashedPassword = await bcrypt.hash(password, 10);[39m
+[31m→ 6     const user = await prisma.user.create([39m
+[31mCan't reach database server at `10.141.46.27:5432`[39m
+
+[31mPlease make sure your database server is running at `10.141.46.27:5432`.[39m

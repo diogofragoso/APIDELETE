@@ -1,6 +1,6 @@
 //arquivo que vai conter todas as rotas
 import { Router } from 'express';
-// import userRoutes from './user.routes';
+import userRoutes from './user.routes';
 // import Logger from '../config/logger';
 // import { login } from '../controllers/auth.controller';
 
@@ -16,6 +16,6 @@ router.get('/health', (req, res) => {
 // router.post('/login', login); // <-- ROTA DE LOGIN AQUI
 
 // Todas as rotas de utilizadores vão começar com /users
-// router.use('/users', userRoutes);
+ router.use('/users', userRoutes);
 
 export default router;
