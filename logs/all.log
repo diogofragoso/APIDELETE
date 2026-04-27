@@ -158,3 +158,7 @@
 2026-04-27 15:11:02:112 [35mhttp[39m: [35mGET /users 200 124 - 17.817 ms[39m
 2026-04-27 15:12:17:1217 [33mwarn[39m: [33mTentativa de envio de dados invalidos barrada pelo zod.[39m
 2026-04-27 15:12:17:1217 [35mhttp[39m: [35mPOST /users 400 221 - 1.411 ms[39m
+2026-04-27 15:14:40:1440 [32minfo[39m: [32mUsuário aluno1 criado com sucesso![39m
+2026-04-27 15:14:40:1440 [35mhttp[39m: [35mPOST /users 201 92 - 50.192 ms[39m
+2026-04-27 15:40:26:4026 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-04-27 15:40:29:4029 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
