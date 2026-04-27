@@ -25,4 +25,4 @@ if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma;
 //  Cria uma conexão com o banco usando Prisma
 // Evita criar múltiplas conexões em desenvolvimento
 // Reutiliza a mesma instância sempre
-// Mostra as queries SQL no console
+// Mostra as queries SQL no console 
