@@ -162,3 +162,7 @@
 2026-04-27 15:14:40:1440 [35mhttp[39m: [35mPOST /users 201 92 - 50.192 ms[39m
 2026-04-27 15:40:26:4026 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
 2026-04-27 15:40:29:4029 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-04-28 14:34:29:3429 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-04-28 14:34:45:3445 [35mhttp[39m: [35mGET /users 200 178 - 28.416 ms[39m
+2026-04-28 14:34:45:3445 [35mhttp[39m: [35mGET /favicon.ico 404 150 - 1.259 ms[39m
+2026-04-28 14:46:42:4642 [35mhttp[39m: [35mGET /users 304 - - 20.890 ms[39m
