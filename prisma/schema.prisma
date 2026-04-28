@@ -10,7 +10,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url = env("DATABASE_URL")
+  url      = env("DATABASE_URL")
 }
 
 model User {
@@ -21,8 +21,30 @@ model User {
   createdAt DateTime @default(now())
 }
 
+model Client {
+  id_cliente Int     @id @default(autoincrement())
+  nome       String? 
+  email      String
+}
 
-model client {
-  id_cliente        Int      @id @default(autoincrement())
-  nome              String?   
+model Fornecedor {
+  id_fornecedor Int                  @id @default(autoincrement())
+  razao_social  String
+  cnpj          String
+  
+  // Campo de relação: indica que um Fornecedor pode ter vários telefones
+  telefones     TelefoneFornecedor[] 
+}
+
+model TelefoneFornecedor {
+  id_telefone   Int        @id @default(autoincrement())
+  numero        String
+  tipo          String?    // Opcional: para identificar se é "Fixo", "Celular", "WhatsApp", etc.
+  
+  // Chave estrangeira que conecta com o Fornecedor
+  id_fornecedor Int
+  fornecedor    Fornecedor @relation(fields: [id_fornecedor], references: [id_fornecedor], onDelete: Cascade)
+
+  // Define o nome exato da tabela no seu sistema de gerenciamento de banco de dados
+  @@map("telefone_fornecedor") 
 }

@@ -18,4 +18,5 @@ router.get('/health', (req, res) => {
 // Todas as rotas de utilizadores vão começar com /users
  router.use('/users', userRoutes);
 
+
 export default router;
