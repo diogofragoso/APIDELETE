@@ -2,6 +2,7 @@ import { Router } from "express";
 import {create, list, update, remove, getById} from '../controllers/user.controller'; 
 import { validate } from '../middlewares/validate.middleware';
 import { createUserSchema, updateUserSchema } from '../schemas/user.schema';
+import { authenticate } from "../middlewares/auth.middleware";
 
 const router = Router();
 
@@ -18,16 +19,23 @@ const router = Router();
 // router.get('/:id', getById);
 
 // Forma 2 rota com validador Zod
-router.post('/', validate(createUserSchema), create); // <-- validação para criação de novos users
-router.get('/', list);
-router.put('/:id', validate(updateUserSchema), update); // <-- validação para atualização de users
-router.get('/:id', getById);
+// router.post('/', validate(createUserSchema), create); // <-- validação para criação de novos users
+// router.get('/', list);
+// router.put('/:id', validate(updateUserSchema), update); // <-- validação para atualização de users
+// router.get('/:id', getById);
+
+
+// Forma 3 rota protegida com JWT
+// A criação de usuários continurá desprotegida ou 
+// qualquer um podera criar uma conta mesmo sem logar
+router.post('/', validate(createUserSchema), create);
 
 
 
-
-
-
+router.get('/', authenticate, list);
+router.get('/:id', authenticate, getById);
+router.put('/:id', authenticate, validate(updateUserSchema), update); // <-- validação para atualização de users
+router.delete('/:id', authenticate, remove);
 
 
 
